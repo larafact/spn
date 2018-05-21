@@ -1,5 +1,6 @@
 {
     "name": "mail3390/spn",
+    "version": "0.1.4",
     "description": "Simple classes for sending Push Notifications via Firebase Cloud Messaging",
     "keywords": ["laravel", "fcm", "dgm", "push notification", "device group manager"],
     "license": "MIT",
