@@ -37,11 +37,11 @@ if ( ! function_exists('push_notification')) {
      *
      * @return mixed
      */
-    function push_notification($recipients, string $title, string $body, array $options = [] )
+    function push_notification($recipients, string $title, string $body, array $options = [],array $data = [] )
     {
         return app('spn')
             ->make(\cobisja\Spn\SpnFactory::SIMPLE_PUSH_NOTIFIER)
-            ->pushNotificationTo($recipients, $title, $body, $options);
+            ->pushNotificationTo($recipients, $title, $body, $options,$data);
     }
 }
 

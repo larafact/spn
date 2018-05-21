@@ -169,7 +169,7 @@ class Spn
      *
      * @return bool|mixed
      */
-    public function pushNotificationTo($recipients, string $title, string $body = '', array $options = [])
+    public function pushNotificationTo($recipients, string $title, string $body = '', array $options = [],array $data = [])
     {
         // Recipients storing.
         $this->recipients = $recipients;
@@ -178,6 +178,7 @@ class Spn
         $fields = array(
             'notification' => array_merge(['title' => $title, 'body' => $body, 'sound' => 'default'], $options),
             (is_array($recipients) ? 'registration_ids' : 'to') => $recipients,
+            'data'=>($data),
         );
 
         // Headers building.
