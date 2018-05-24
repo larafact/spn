@@ -29,14 +29,14 @@ For all about errors and exception triggering, please take a look at:
 Require the latest version of Spn into your project
  
 ```
-composer require cobisja/spn
+composer require larafact/spn
 ```
 
 Or you can add it directly into your project's composer.json file:
 ```
 {
     "require": {
-        "cobisja/spn": "^0.1.0"
+        "larafact/spn": "^0.1.0"
     }
 }
 ```
@@ -46,7 +46,7 @@ Register the Spn Service Provider into your app configuration file `config/app.p
 'providers' => [
     // ...
     
-    cobisja\Spn\SpnServiceProvider::class,
+    larafact\Spn\SpnServiceProvider::class,
 ]
 ```
 Then publish the package config file:
