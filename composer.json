@@ -1,13 +1,13 @@
 {
-    "name": "mail3390/spn",
+    "name": "larafact/spn",
     "version": "0.1.5",
     "description": "Simple classes for sending Push Notifications via Firebase Cloud Messaging",
     "keywords": ["laravel", "fcm", "dgm", "push notification", "device group manager"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Cobis",
-            "email": "jcobis@gmail.com"
+            "name": "larafact",
+            "email": "info@mail3390.ml"
         }
     ],
     "require": {
