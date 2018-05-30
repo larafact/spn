@@ -178,8 +178,10 @@ class Spn
         $fields = array(
             'notification' => array_merge(['title' => $title, 'body' => $body, 'sound' => 'default'], $options),
             (is_array($recipients) ? 'registration_ids' : 'to') => $recipients,
-            'data'=>($data),
         );
+		if(!empty($data)){
+			$fields['data']=$data;
+		}
 
         // Headers building.
         $headers = [
